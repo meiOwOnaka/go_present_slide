@@ -1,0 +1,27 @@
+// START OMIT
+## セクション③(スライド3ページ目)
+
+    インデントをつけるとコードブロックのように表示される
+    ※小さく表示されるので注意
+
+## セクション④(スライド4ページ目)
+
+// コメント
+: スピーカー用のノート
+
+**Bold**  
+**太字**  
+
+_italic_  
+_斜体_  
+
+Markup—_斜体_—test.  
+Markup—_italic_—test.  
+
+_Italic_, Plain and **Bold**.
+
+[go - present](https://pkg.go.dev/golang.org/x/tools/present) 
+
+.image images/flying.png 180 _
+
+// END OMIT

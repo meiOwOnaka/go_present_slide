@@ -1,0 +1,62 @@
+# タイトル(表紙)
+サブタイトル
+01 Jul 2022
+
+作者
+役職や会社名
+mail_address@example.com
+https://url/
+@twitter_name
+
+## セクション①(スライド1ページ目)
+
+内容
+
+## セクション②(スライド2ページ目)
+
+- 箇条書き
+- 箇条書き
+
+1. 番号付き箇条書き
+1. 番号付き箇条書き
+
+## セクション③(スライド3ページ目)
+
+    インデントをつけるとコードブロックのように表示される
+    ※小さく表示されるので注意
+
+## セクション④(スライド4ページ目)
+
+// コメント
+: スピーカー用のノート
+
+**Bold**  
+**太字**  
+
+_italic_  
+_斜体_  
+
+Markup—_斜体_—test.  
+Markup—_italic_—test.  
+
+_Italic_, Plain and **Bold**.
+
+[go - present](https://pkg.go.dev/golang.org/x/tools/present)
+
+.image images/flying.png 180 _
+
+## セクション⑤(スライド5ページ目)
+
+.play hello.go
+
+## セクション⑥(スライド6ページ目)
+
+text1
+
+### サブセクション
+
+text2
+
+#### サブサブセクション
+
+text3

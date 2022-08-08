@@ -1,0 +1,24 @@
+// START OMIT
+# タイトル(表紙)
+サブタイトル
+DD Month(3文字目まで 例:July=Jul) YYYY
+
+作者
+役職や会社名
+mail_address@example.com
+https://url/
+@twitter_name
+
+## セクション①(スライド1ページ目)
+
+内容
+
+## セクション②(スライド2ページ目)
+
+- 箇条書き
+- 箇条書き
+
+1. 番号付き箇条書き
+1. 番号付き箇条書き
+
+// END OMIT

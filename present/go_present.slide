@@ -1,0 +1,91 @@
+# Goのpresentパッケージを使用してスライドを作成する
+27 Jul 2022
+
+Mei Nakamura
+
+## お話しする内容
+
+1. presentとは何か？
+1. 使い方
+1. 詰まった部分
+1. 書き方
+1. まとめ
+
+.image images/standing.png 230 _
+
+## presentとは何か？
+
+**ざっくり**
+- スライドが作成できるGoのパッケージ
+- パッケージをインストールするとすぐに使える
+- スライド上でコードを動かせる
+
+## 使い方①
+※あらかじめGoの環境を用意してください
+: gitlabのリポジトリ案内
+1. プロジェクトフォルダ作成  
+2. 「xxx.slide」ファイル作成  
+3. `go mod init` 実行
+4. 下記コマンドでインストール  
+    `go install golang.org/x/tools/cmd/present@latest`
+    `go get golang.org/x/tools/cmd/present`
+
+## 使い方②
+
+5. インストールできたらターミナルに `present` を入力するだけ！  
+  下記のような表示が出るので、「127.0.0.1:XXXXX」部分をクリック！  
+  `2022/MM/DD HH:MM:SS accepting connection from: 127.0.0.1:XXXXX`
+6. ブラウザが開かれ、下記のようなページが表示されます
+
+.image images/go_talks.jpg 350 _
+
+: 作成したファイル名をクリックするとスライドとして表示されます。
+
+## 詰まった部分
+
+- present が使えない  
+⇒ go mod init をしていなかった 
+
+- 英語は斜体にできるが、日本語だと斜体にできない  
+⇒ 理由判明せず
+
+- サブセクションを複数使うと変な表示になる  
+⇒ 仕様？
+
+## 書き方①
+
+: レガシー構文と新しい構文 マークダウン形式があり、新しい構文で書いています。
+: 作者名以降の部分は、プレーンテキストまでが表紙に表示されます(アドレスなど以外)。
+.code ./code/explanationCode1.slide /START OMIT/,/END OMIT/
+
+## 書き方②
+
+: 斜体は日本語だとうまく表示されません
+.code ./code/explanationCode2.slide /START OMIT/,/END OMIT/
+
+## 書き方③
+
+: 「Hello world」と現時刻を表示するだけのプログラムです。
+.code ./code/explanationCode3.slide /START OMIT/,/END OMIT/
+
+## 書き方④
+
+: セクションを複数配置しています。
+.code ./code/explanationCode4.slide /START OMIT/,/END OMIT/
+
+## 書き方①～④を表示すると
+
+[サンプルへ移動](http://127.0.0.1:3999/sample.slide#1)  
+
+## まとめ
+
+- 記述方法さえ分かってしまえば簡単にスライドが作れて便利
+- 1つのスライドに複数のセクションは入れない方がいいかも
+- 画像の位置など、細かい指定はできない
+- 文字も多すぎるとはみ出てしまう
+- スライド上で実際にコードを動かすことができて面白い
+- 絵文字も使える💡
+
+
+.image images/flying.png 150 _
+スライド内で使用したイラストは [こちら](https://github.com/egonelbre/gophers) よりお借りしました🖌️
