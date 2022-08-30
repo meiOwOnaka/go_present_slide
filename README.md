@@ -15,6 +15,6 @@
   go get golang.org/x/tools/cmd/present
   ```
 1. フォルダ内でターミナルに `present` を入力しpresentを開始
-1. 下記のような表示が出るので、「127.0.0.1:XXXXX」をクリック
+1. 下記のような表示が出るので、「127.0.0.1:XXXXX」をクリック  
   `2022/MM/DD HH:MM:SS accepting connection from: 127.0.0.1:XXXXX`
 1. ブラウザが開かれるので、作成した「.slide」をクリックするとスライドが表示される
